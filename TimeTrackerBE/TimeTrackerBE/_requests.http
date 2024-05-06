@@ -1,0 +1,26 @@
+@baseUrl = http://localhost:5000
+
+
+################################################## activity
+GET {{baseUrl}}/activity
+#####
+
+################################################## employees
+GET {{baseUrl}}/employees
+#####
+
+################################################## project
+GET {{baseUrl}}/project
+#####
+
+################################################## projectschedule
+DELETE {{baseUrl}}/projectschedule/1
+#####
+POST {{baseUrl}}/projectschedule?ProjectId=1&EmployeeId=1&ActivityId=1&StartDate=abc&EndDate=abc&Description=abc
+#####
+PUT {{baseUrl}}/projectschedule/1?ProjectId=1&EmployeeId=1&ActivityId=1&StartDate=abc&EndDate=abc&Description=abc
+#####
+
+################################################## projectschedules
+GET {{baseUrl}}/projectschedules?employeeId=1
+#####
